@@ -1,0 +1,11 @@
+# robots.txt for Dr Sungkyung Kim's Academic Website
+# Allow all search engines to crawl the entire site
+
+User-agent: *
+Allow: /
+
+# Sitemap location - UPDATE THIS when you have your domain
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl-delay for polite crawling (optional)
+Crawl-delay: 1
