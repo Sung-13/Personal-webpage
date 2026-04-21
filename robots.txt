@@ -4,8 +4,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap location - UPDATE THIS when you have your domain
-Sitemap: https://yourdomain.com/sitemap.xml
+# Sitemap location
+Sitemap: https://sung-13.github.io/Personal-webpage/sitemap.xml
 
 # Crawl-delay for polite crawling (optional)
 Crawl-delay: 1

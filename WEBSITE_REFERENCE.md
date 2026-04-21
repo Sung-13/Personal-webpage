@@ -1,0 +1,353 @@
+# Dr Sungkyung Kim - Academic Website Reference
+
+This document contains all the information needed to maintain and update the website.
+
+---
+
+## Quick Reference
+
+- **Local Path**: `/Users/sungkyungkim/Documents/99 percent perspiration/website/`
+- **Main File**: `index.html`
+- **Styles**: `assets/css/style.css`
+- **JavaScript**: `assets/js/main.js`
+- **Profile Image**: `assets/images/profile.jpg`
+
+---
+
+## File Structure
+
+```
+website/
+├── index.html              # Main website content
+├── sitemap.xml             # SEO sitemap
+├── robots.txt              # Search engine instructions
+├── DEPLOYMENT_GUIDE.txt    # GitHub Pages setup guide
+├── WEBSITE_REFERENCE.md    # This file
+└── assets/
+    ├── css/
+    │   └── style.css       # All styling
+    ├── js/
+    │   └── main.js         # Navigation, filters, animations
+    └── images/
+        └── profile.jpg     # Profile photo
+```
+
+---
+
+## Current Website Content
+
+### Hero Section
+- **Name**: Dr Sungkyung Kim
+- **Title**: Assistant Professor in Sport Management
+- **Affiliation**: Faculty of Health Science and Sport, University of Stirling, Scotland
+
+### About Me
+I am an assistant professor (lecturer) in sport management at the University of Stirling, Scotland. I joined the university in August 2022, bringing an interdisciplinary background spanning law, tourism, and sport marketing.
+
+I completed my PhD in sport marketing and communication at Loughborough University in 2022. My earlier studies include an MSc in sport management, MA in tourism science and BA in law.
+
+This background allows me to approach research from multiple perspectives. I aim to connect academic theory with practical applications that can inform policy and improve quality of life.
+
+In 2024, I completed certification in artificial intelligence in sport from the Academy for Sport Innovation and Technology Studies (AISTS) in Lausanne, Switzerland.
+
+**Profile Links**:
+- University of Stirling: https://www.stir.ac.uk/people/1835665
+- ORCID: https://orcid.org/0000-0002-2027-213X
+
+### Research Interests
+
+#### 1. Policy Public Relations
+Studying how communication strategies can improve public engagement and policy support in sport event management. This includes government-public relationships, crisis communication, and stakeholder engagement in mega sport events.
+
+**Topics**:
+- Government-public relationships
+- Mega sport event policy
+- Crisis communication
+- Public engagement
+
+#### 2. Technology Adoption & Consumer Behaviour
+Exploring technologies such as AR, VR, smart wearables, connected fitness equipment, and AI-powered services. The goal is to understand how these technologies affect wellbeing and how digital tools can support inclusion.
+
+**Topics**:
+- AR/VR in sport
+- Esports and gaming
+- Smart wearables
+- AI in sport
+
+### Research Funding
+
+| Amount | Funder | Role | Year |
+| -------- | -------- | ------ | ------ |
+| £23,852 | Korean Sport & Olympic Committee (KSOC) | Co-Investigator | 2024-2025 |
+| £2,000 | University of Stirling Entrepreneurial Quest | Principal Investigator | 2025 |
+| £9,393 | European Commission Erasmus+ Sport Program | Co-Investigator | 2023 |
+| £130,000 | Korea Institute of Sport Science Projects | Research Assistant | 2021-2022 |
+
+### Publications
+
+#### Books
+- **2025**: Exploring Esports: Players, Fans, and the Esports Industry
+  - Hong, H. J., & Kim, S. (Editors)
+  - London: Routledge (Taylor & Francis)
+  - DOI: https://doi.org/10.4324/9781032665504
+
+#### Journal Articles
+- **2026**: Official onsite event versus unofficial streaming: Understanding the wellbeing formation in esports spectatorship
+  - Kim, S., & Hong, H. J.
+  - Computers in Human Behavior, 179, 108950
+  - DOI: https://doi.org/10.1016/j.chb.2026.108950
+
+- **2026**: Does Communication Alone Fail in Crisis? The Relationship-Mediating Model in Securing Residents' Supportive Attitudes towards Hosting the Olympic Games
+  - Kim, S., Kang, Y., & Manoli, E. A.
+  - International Journal of Sport Communication, 19(3/4) [Accepted]
+
+- **2025**: Does Communication Matter in Relationships? The Association Between Relationship-Cultivation Strategies and Government-Public Relationships in Sport-Event Management
+  - Kim, S., Manoli, A. E., Pyun, D., & Kenyon, J. A.
+  - International Journal of Sport Communication
+  - DOI: https://doi.org/10.1123/ijsc.2025-0136
+
+- **2025**: Connecting the worlds of sailing and e-sailing: The structural relationships among gaming experience, psychological variables and sport behaviour intentions
+  - Botwina, G., Kim, S., & Hong, H. J.
+  - Managing Sport and Leisure
+  - DOI: https://doi.org/10.1080/23750472.2025.2470271
+
+- **2025**: A psycho-educational curriculum package for sports career transition practitioners: A pilot intervention case study
+  - Hong, H. J., Kim, S., & Jeon, C.
+  - Education Sciences, 15(2), 127
+  - DOI: https://doi.org/10.3390/educsci15020127
+
+- **2025**: Exploring athletes' experiences and perspectives on an educational program for athletes in the Pacific Islands
+  - Hong, H. J., Kim, S., & Minikin, B.
+  - Frontiers in Sports and Active Living, 6, 1388689
+  - DOI: https://doi.org/10.3389/fspor.2024.1388689
+
+- **2025**: Exploring the economic value of wine attributes and consumer choice behavior using choice experiment data: A case study of the UK wine market
+  - Jeon, C., Campbell, D., & Kim, S.
+  - Journal of Tourism Studies, 37(2), 89-112
+  - DOI: https://doi.org/10.21581/jts.2025.5.37.2.89
+
+- **2025**: Sprinting to success?: F1 fans' excitement towards change in sport competition formats
+  - Manoli, A. E., Kim, S., O'Byrne, D., Hie, J., & Keys, Z.
+  - Leisure Studies, 44(2), 353-363
+  - DOI: https://doi.org/10.1080/02614367.2024.2413054
+
+- **2024**: The effect of government-public relationships on residents' support in mega sport events: A moderating effect of government crisis response
+  - Kim, S., Manoli, A. E., & Pyun, D. Y.
+  - Leisure Studies, 44(3), 523-539
+  - DOI: https://doi.org/10.1080/02614367.2024.2328093
+
+- **2024**: Transforming sport consumption: Exploring motivated sport fans innovativeness in the context of AR live sport streaming
+  - Kim, S., & Manoli, A. E.
+  - International Journal of Sports Marketing and Sponsorship, 25(2), 444-463
+  - DOI: https://doi.org/10.1108/IJSMS-09-2023-0180
+
+- **2024**: Public relations: The missing element in the eSport governance
+  - Kim, S., & Manoli, A. E.
+  - Managing Sport and Leisure, 29(6), 955-959
+  - DOI: https://doi.org/10.1080/23750472.2022.2134188
+
+- **2023**: Government-public relationships in the context of mega sport events: Conceptualisation and scale development
+  - Kim, S., Manoli, A. E., Pyun, D. Y., & Kenyon, J. A.
+  - International Journal of Sports Marketing and Sponsorship, 24(5), 1055-1074
+  - DOI: https://doi.org/10.1108/IJSMS-01-2023-0007
+
+- **2023**: From horizontal to vertical relationships: How online community identification fosters sport fans' team identification and behavioural intentions
+  - Kim, S., & Manoli, A. E.
+  - International Journal of Sports Marketing and Sponsorship, 24(1), 1-19
+  - DOI: https://doi.org/10.1108/ijsms-09-2021-0188
+
+- **2022**: Does relationship quality matter in policy-making? The impact of government-public relationships and residents' perceptions on their support towards a mega-sport event
+  - Kim, S., & Manoli, A. E.
+  - International Journal of Sport Policy and Politics, 14(2), 207-224
+  - DOI: https://doi.org/10.1080/19406940.2021.2013925
+
+- **2022**: Building team brand equity through perceived CSR: The mediating role of dual identification
+  - Kim, S., & Manoli, A. E.
+  - Journal of Strategic Marketing, 30(3), 281-295
+  - DOI: https://doi.org/10.1080/0965254x.2020.1795912
+
+#### Book Chapters
+- **2025**: Understanding Motivations for Streaming and Viewing for Esports Live Streaming
+  - Kim, S.
+  - In: Hong, H. J. & Kim, S. (eds.) Exploring Esports. Routledge, pp. 95-120
+  - DOI: https://doi.org/10.4324/9781032665504-8
+
+- **2025**: Esports Event Venue Marketing
+  - Kim, S.
+  - In: Hong, H. J. & Kim, S. (eds.) Exploring Esports. Routledge, pp. 121-142
+  - DOI: https://doi.org/10.4324/9781032665504-9
+
+- **2025**: Esports Fan Behaviour
+  - Kim, S.
+  - In: Hong, H. J. & Kim, S. (eds.) Exploring Esports. Routledge, pp. 143-158
+  - DOI: https://doi.org/10.4324/9781032665504-10
+
+- **2025**: Sponsorship in Esports
+  - Kim, S.
+  - In: Hong, H. J. & Kim, S. (eds.) Exploring Esports. Routledge, pp. 159-178
+  - DOI: https://doi.org/10.4324/9781032665504-11
+
+- **2025**: Market Segmentation
+  - Kim, S.
+  - In: Hong, H. J. & Kim, S. (eds.) Exploring Esports. Routledge, pp. 179-198
+  - DOI: https://doi.org/10.4324/9781032665504-12
+
+### Teaching
+
+#### Module Coordination
+- Managing the business of sport (SPSU9SB) - Stirling & Chengdu campus
+- Sports policy (SPSUSPY) - Singapore campus
+
+#### Undergraduate Teaching
+- Understanding global sport (SPSU813)
+- Research methods in sports studies (SPSU9ME)
+- Sports policy (SPSU9PY)
+- Major project in sport studies (SPSU9RP) - Chengdu
+
+#### Postgraduate Supervision
+- Research project (SPSP053) - MSc dissertation supervision
+
+### PhD Opportunities
+
+**Introduction**:
+I am looking for PhD students to join me at the University of Stirling, Scotland, UK. If you are interested in esports research or sport technology, I would be happy to discuss supervision opportunities with you.
+
+**Research Areas**:
+- Esports: Fan behaviour, live streaming, sponsorship, event marketing, market segmentation, and governance
+- Sport technology: AR/VR adoption, smart wearables, AI-powered services, AI literacy, and their impact on consumer behaviour and wellbeing
+- Policy public relations: Government-public relationships, crisis communication, stakeholder engagement in mega sport events
+
+**What I Look For**:
+- A Master's degree in sport management, marketing, or a related field
+- Research interests aligned with esports or sport technology
+- Quantitative or qualitative research skills
+- Written and verbal communication skills in English
+- Ability to work independently
+- Interest in sport management research
+
+**How to Apply**:
+Send the following to sungkyung.kim@stir.ac.uk:
+1. Your CV with academic background
+2. A brief research proposal (1-2 pages)
+3. Academic transcripts
+4. A sample of your writing (if available)
+
+Subject line: "PhD inquiry: [Your name]"
+
+**Funding**:
+PhD funding can vary depending on your circumstances and eligibility. I am happy to discuss potential funding options and help you explore what might be available for your situation.
+
+### Contact Information
+
+- **Email**: sungkyung.kim@stir.ac.uk
+- **Office**: Faculty of Health Science and Sport, University of Stirling, Stirling, FK9 4LA, Scotland, United Kingdom
+
+---
+
+## How to Update Content
+
+### Adding a New Publication
+
+1. Open `index.html`
+2. Find the `<!-- Publications section -->` comment
+3. Add a new publication item in the appropriate category:
+
+```html
+<div class="publication-item" data-type="article">
+    <span class="pub-year">2025</span>
+    <div class="pub-content">
+        <h4 class="pub-title">Your Publication Title</h4>
+        <p class="pub-authors">Author, A., & Author, B.</p>
+        <p class="pub-venue">Journal Name, Volume(Issue), Pages</p>
+        <a href="https://doi.org/YOUR-DOI" class="pub-link" target="_blank" rel="noopener">DOI</a>
+    </div>
+</div>
+```
+
+**data-type options**: `book`, `article`, `chapter`
+
+### Updating Research Funding
+
+Find the `grants-grid` div and add:
+
+```html
+<div class="grant-item">
+    <span class="grant-amount">£XX,XXX</span>
+    <span class="grant-title">Funder Name</span>
+    <span class="grant-role">Role | Year</span>
+</div>
+```
+
+### Updating Teaching
+
+Find the appropriate `teaching-card` and add list items:
+
+```html
+<li>
+    <strong>Module Name (CODE)</strong>
+    <span>Campus location</span>
+</li>
+```
+
+### Updating PhD Research Areas
+
+Find the `phd-card` with "Research areas" and edit the list items.
+
+---
+
+## Deployment Commands
+
+### Preview Locally
+```bash
+cd "/Users/sungkyungkim/Documents/99 percent perspiration/website"
+python3 -m http.server 8000
+```
+Then open http://localhost:8000 in your browser.
+
+### Push Changes to GitHub
+```bash
+cd "/Users/sungkyungkim/Documents/99 percent perspiration/website"
+git add -A
+git commit -m "Your commit message"
+git push
+```
+
+### First-Time Setup (if not done)
+See `DEPLOYMENT_GUIDE.txt` for complete instructions.
+
+---
+
+## SEO Keywords
+
+The website is optimized for:
+- PhD in UK
+- PhD in Scotland
+- Esports PhD
+- Sport technology PhD
+- Sport management PhD
+- Esports research
+- Sport consumer behaviour
+- AR VR sport
+- AI in sport
+
+---
+
+## Important URLs
+
+- University Profile: https://www.stir.ac.uk/people/1835665
+- ORCID: https://orcid.org/0000-0002-2027-213X
+- Email: sungkyung.kim@stir.ac.uk
+
+---
+
+## Notes
+
+- Use sentence case for headings (capital only for first word)
+- Keep language simple and approachable
+- Avoid pressuring words like "strong", "excellent" in PhD requirements
+- The About section is centered with max-width 800px
+- Profile buttons use the `btn-highlight` class for bold styling
+
+---
+
+*Last updated: March 2026*
