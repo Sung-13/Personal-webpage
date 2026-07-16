@@ -7,6 +7,9 @@
 .idea/
 *.swp
 
+# Claude Code local settings
+.claude/
+
 # Backups
 *.simplified.*
 *.bak

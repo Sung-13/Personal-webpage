@@ -6,7 +6,9 @@ This document contains all the information needed to maintain and update the web
 
 ## Quick Reference
 
-- **Local Path**: `/Users/sungkyungkim/Documents/99 percent perspiration/website/`
+- **Live Site**: https://sung-13.github.io/Personal-webpage/
+- **GitHub Repository**: https://github.com/Sung-13/Personal-webpage
+- **Local Path**: `/Users/sungkyungkim/Documents/personal-academic-website/`
 - **Main File**: `index.html`
 - **Styles**: `assets/css/style.css`
 - **JavaScript**: `assets/js/main.js`
@@ -17,19 +19,23 @@ This document contains all the information needed to maintain and update the web
 ## File Structure
 
 ```
-website/
-├── index.html              # Main website content
+personal-academic-website/
+├── index.html              # Main website content (everything lives here)
 ├── sitemap.xml             # SEO sitemap
 ├── robots.txt              # Search engine instructions
-├── DEPLOYMENT_GUIDE.txt    # GitHub Pages setup guide
+├── README.md               # Repository overview
 ├── WEBSITE_REFERENCE.md    # This file
+├── .gitignore              # Files excluded from git
 └── assets/
     ├── css/
     │   └── style.css       # All styling
     ├── js/
-    │   └── main.js         # Navigation, filters, animations
+    │   └── main.js         # Navigation, filters, footer year
+    ├── fonts/              # Self-hosted Inter & Playfair Display fonts
     └── images/
-        └── profile.jpg     # Profile photo
+        ├── profile.jpg     # Profile photo
+        ├── favicon.png     # Browser tab icon ("SK" monogram)
+        └── apple-touch-icon.png  # iOS home-screen icon
 ```
 
 ---
@@ -246,6 +252,17 @@ PhD funding can vary depending on your circumstances and eligibility. I am happy
 
 ## How to Update Content
 
+### Updating Your Introduction (About Section)
+
+1. Open `index.html`
+2. Find the `<!-- About section -->` comment
+3. Edit the paragraphs inside `<div class="about-text">` — each `<p>...</p>` is one paragraph. Add, remove, or rewrite paragraphs as needed.
+
+If your job title or role changes, also update:
+- The hero section: `<p class="hero-title">` (your title) and `<p class="hero-institution">` (your affiliation), just below the `<!-- Hero Section -->` comment
+- The `<title>` tag and `<meta name="description">` near the top of the file (what Google shows in search results)
+- The `"jobTitle"` field in the Person structured-data block (`<script type="application/ld+json">`)
+
 ### Adding a New Publication
 
 1. Open `index.html`
@@ -295,25 +312,43 @@ Find the `phd-card` with "Research areas" and edit the list items.
 
 ---
 
-## Deployment Commands
+## Deployment
+
+The site is live on GitHub Pages at **https://sung-13.github.io/Personal-webpage/**. Any push to the `main` branch redeploys automatically within 1-2 minutes.
 
 ### Preview Locally
 ```bash
-cd "/Users/sungkyungkim/Documents/99 percent perspiration/website"
+cd /Users/sungkyungkim/Documents/personal-academic-website
 python3 -m http.server 8000
 ```
-Then open http://localhost:8000 in your browser.
+Then open http://localhost:8000 in your browser. Press `Ctrl+C` in Terminal to stop the server.
 
-### Push Changes to GitHub
+### Push Changes to GitHub (this publishes the site)
 ```bash
-cd "/Users/sungkyungkim/Documents/99 percent perspiration/website"
+cd /Users/sungkyungkim/Documents/personal-academic-website
 git add -A
 git commit -m "Your commit message"
 git push
 ```
 
-### First-Time Setup (if not done)
-See `DEPLOYMENT_GUIDE.txt` for complete instructions.
+### Custom Domain (optional, ~£10/year)
+
+A custom domain like `sungkyungkim.com` looks more professional and improves SEO.
+
+1. Buy a domain (e.g. from Namecheap or Porkbun)
+2. In the registrar's DNS settings, add:
+   - `A` records for host `@` pointing to: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - `CNAME` record for host `www` pointing to `sung-13.github.io.`
+3. Create a `CNAME` file in the repo root containing just the domain name
+4. Find-and-replace `https://sung-13.github.io/Personal-webpage/` with the new domain in `index.html`, `sitemap.xml`, and `robots.txt`
+5. Commit and push, then in GitHub: repo **Settings → Pages → Custom domain**, enter the domain, save, and tick "Enforce HTTPS"
+
+### SEO Checklist (after significant updates)
+
+1. **Google Search Console** (https://search.google.com/search-console): add the site as a property, verify ownership, and submit `sitemap.xml`. Request re-indexing after big content changes.
+2. **Google Scholar profile** (https://scholar.google.com/citations): link it to this website.
+3. **ORCID**: keep the website URL listed on the ORCID profile.
+4. Share the site on ResearchGate, LinkedIn, and the University of Stirling profile page.
 
 ---
 
@@ -350,4 +385,4 @@ The website is optimized for:
 
 ---
 
-*Last updated: March 2026*
+*Last updated: July 2026*
