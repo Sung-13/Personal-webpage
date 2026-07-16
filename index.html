@@ -246,20 +246,18 @@
                     <filter id="ha-stroke-swim" x="-15%" y="-60%" width="130%" height="220%">
                         <feTurbulence type="fractalNoise" baseFrequency="0.012 0.045" numOctaves="3" seed="7" result="n"/>
                         <feDisplacementMap in="SourceGraphic" in2="n" scale="22" result="disp"/>
-                        <feDropShadow in="disp" dx="1" dy="4" stdDeviation="3" flood-color="#7d99ad" flood-opacity="0.4"/>
+                        <feDropShadow in="disp" dx="1" dy="4" stdDeviation="3.5" flood-color="#7d99ad" flood-opacity="0.4"/>
                     </filter>
                     <filter id="ha-stroke-tennis" x="-15%" y="-60%" width="130%" height="220%">
                         <feTurbulence type="fractalNoise" baseFrequency="0.012 0.045" numOctaves="3" seed="7" result="n"/>
                         <feDisplacementMap in="SourceGraphic" in2="n" scale="22" result="disp"/>
-                        <feDropShadow in="disp" dx="1" dy="4" stdDeviation="3" flood-color="#a3a89e" flood-opacity="0.35"/>
+                        <feDropShadow in="disp" dx="1" dy="4" stdDeviation="3.5" flood-color="#a3a89e" flood-opacity="0.35"/>
                     </filter>
                     <filter id="ha-stroke-esports" x="-15%" y="-60%" width="130%" height="220%">
                         <feTurbulence type="fractalNoise" baseFrequency="0.012 0.045" numOctaves="3" seed="7" result="n"/>
                         <feDisplacementMap in="SourceGraphic" in2="n" scale="22" result="disp"/>
-                        <feDropShadow in="disp" dx="1" dy="4" stdDeviation="3" flood-color="#8593a6" flood-opacity="0.35"/>
+                        <feDropShadow in="disp" dx="1" dy="4" stdDeviation="3.5" flood-color="#8593a6" flood-opacity="0.35"/>
                     </filter>
-                    <filter id="ha-blur"><feGaussianBlur stdDeviation="3"/></filter>
-                    <filter id="ha-blur-sm"><feGaussianBlur stdDeviation="1.6"/></filter>
                     <linearGradient id="ha-water" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="0" stop-color="#f2f7fa"/>
                         <stop offset="0.55" stop-color="#e7f0f6"/>
@@ -275,11 +273,6 @@
                         <stop offset="0.6" stop-color="#ecf0f5"/>
                         <stop offset="1" stop-color="#e0e7ef"/>
                     </linearGradient>
-                    <radialGradient id="ha-glow" cx="0.5" cy="0.5" r="0.5">
-                        <stop offset="0" stop-color="#ffe3b0" stop-opacity="0.65"/>
-                        <stop offset="0.55" stop-color="#ffedcc" stop-opacity="0.3"/>
-                        <stop offset="1" stop-color="#ffedcc" stop-opacity="0"/>
-                    </radialGradient>
                     <linearGradient id="ha-wash" x1="0" y1="0" x2="1" y2="0">
                         <stop offset="0" stop-color="#ffffff" stop-opacity="0.92"/>
                         <stop offset="0.42" stop-color="#ffffff" stop-opacity="0.72"/>
@@ -288,7 +281,8 @@
                     </linearGradient>
                 </defs>
 
-                <!-- Scene 1: open-water swimmers -->
+                <!-- Scene 1: water blues -->
+
                 <g class="hero-scene hero-scene-swim">
                     <rect width="1440" height="800" fill="url(#ha-water)"/>
                     <g filter="url(#ha-stroke-swim)">
@@ -297,38 +291,23 @@
                         <path d="M-80 470 Q 260 445 560 468 T 1120 460 T 1520 472 L 1520 530 Q 1200 548 900 535 T 340 542 T -80 528 Z" fill="#c9deec" opacity="0.9"/>
                         <path d="M-80 600 Q 320 575 680 598 T 1260 590 T 1520 600 L 1520 662 Q 1120 680 760 665 T 240 672 T -80 658 Z" fill="#b9d4e6" opacity="0.85"/>
                         <path d="M-80 715 Q 300 695 640 712 T 1220 706 T 1520 715 L 1520 800 L -80 800 Z" fill="#a9c9de" opacity="0.8"/>
+                        <path d="M240 408 Q 480 392 760 404 T 1180 400 L 1180 434 Q 900 448 620 438 T 240 442 Z" fill="#d5e7f1" opacity="0.85"/>
+                        <path d="M520 552 Q 760 538 1040 548 T 1400 544 L 1400 574 Q 1140 586 880 578 T 520 580 Z" fill="#bcd7e7" opacity="0.8"/>
                         <path d="M60 258 Q 330 240 620 256 T 1180 250 L 1180 268 Q 880 282 560 272 T 60 276 Z" fill="#ffffff" opacity="0.55"/>
                         <path d="M200 545 Q 480 528 780 542 T 1340 538 L 1340 556 Q 1040 568 720 560 T 200 562 Z" fill="#ffffff" opacity="0.5"/>
-                    </g>
-                    <g transform="translate(660,450) scale(0.72)">
-                        <path d="M-8 10 L -150 34 L -128 40 L 2 16 Z" fill="#3d5a77" opacity="0.13" filter="url(#ha-blur)"/>
-                        <ellipse cx="-52" cy="6" rx="60" ry="7" fill="#ffffff" opacity="0.6" filter="url(#ha-blur)"/>
-                        <ellipse cx="0" cy="4" rx="16" ry="4.5" fill="#16304f"/>
-                        <circle cx="15" cy="0" r="4.6" fill="#16304f"/>
-                        <path d="M-4 2 Q 2 -12 12 -9" stroke="#16304f" stroke-width="3.4" fill="none" stroke-linecap="round"/>
-                        <ellipse cx="-14" cy="10" rx="26" ry="4" fill="#8fb4cc" opacity="0.5" filter="url(#ha-blur)"/>
-                    </g>
-                    <g transform="translate(850,640)">
-                        <path d="M-10 12 L -185 42 L -160 50 L 2 20 Z" fill="#385470" opacity="0.14" filter="url(#ha-blur)"/>
-                        <ellipse cx="-66" cy="7" rx="76" ry="8" fill="#ffffff" opacity="0.65" filter="url(#ha-blur)"/>
-                        <ellipse cx="0" cy="5" rx="19" ry="5.5" fill="#1a365d"/>
-                        <circle cx="18" cy="0" r="5.4" fill="#1a365d"/>
-                        <path d="M-5 3 Q 3 -14 15 -11" stroke="#1a365d" stroke-width="4" fill="none" stroke-linecap="round"/>
-                        <path d="M24 4 Q 32 6 36 12" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.7" stroke-linecap="round"/>
-                        <ellipse cx="-18" cy="12" rx="32" ry="5" fill="#7fa8c4" opacity="0.5" filter="url(#ha-blur)"/>
-                    </g>
-                    <g transform="translate(1060,706) scale(1.15)">
-                        <path d="M-10 13 L -205 48 L -178 56 L 3 22 Z" fill="#385470" opacity="0.15" filter="url(#ha-blur)"/>
-                        <ellipse cx="-70" cy="8" rx="82" ry="9" fill="#ffffff" opacity="0.7" filter="url(#ha-blur)"/>
-                        <ellipse cx="0" cy="5" rx="20" ry="6" fill="#1a365d"/>
-                        <circle cx="19" cy="0" r="5.6" fill="#1a365d"/>
-                        <path d="M-6 3 Q 3 -15 16 -12" stroke="#1a365d" stroke-width="4.2" fill="none" stroke-linecap="round"/>
-                        <path d="M26 4 Q 35 7 39 14" stroke="#ffffff" stroke-width="3.2" fill="none" opacity="0.75" stroke-linecap="round"/>
-                        <ellipse cx="-20" cy="13" rx="36" ry="5.5" fill="#7fa8c4" opacity="0.55" filter="url(#ha-blur)"/>
+                        <path d="M-80 176 Q 240 146 520 174 T 1060 168 T 1520 181" stroke="#ffffff" stroke-width="7" fill="none" opacity="0.85" stroke-linecap="round"/>
+                        <path d="M-80 316 Q 300 288 640 311 T 1220 301 T 1520 314" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.6" stroke-linecap="round"/>
+                        <path d="M-80 466 Q 260 441 560 464 T 1120 456 T 1520 468" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.55" stroke-linecap="round"/>
+                        <path d="M-80 596 Q 320 571 680 594 T 1260 586 T 1520 596" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.5" stroke-linecap="round"/>
+                        <path d="M-80 711 Q 300 691 640 708 T 1220 702 T 1520 711" stroke="#ffffff" stroke-width="7" fill="none" opacity="0.55" stroke-linecap="round"/>
+                        <path d="M300 646 Q 620 634 940 644 T 1360 640" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.35" stroke-linecap="round"/>
+                        <path d="M160 745 Q 480 734 820 743 T 1300 739" stroke="#9dc0d6" stroke-width="3.5" fill="none" opacity="0.4" stroke-linecap="round"/>
+                        <path d="M420 352 Q 700 342 1000 350 T 1430 346" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.3" stroke-linecap="round"/>
                     </g>
                 </g>
 
-                <!-- Scene 2: aerial tennis court -->
+                <!-- Scene 2: warm court neutrals -->
+
                 <g class="hero-scene hero-scene-tennis">
                     <rect width="1440" height="800" fill="url(#ha-field)"/>
                     <g filter="url(#ha-stroke-tennis)">
@@ -337,41 +316,19 @@
                         <path d="M-80 560 Q 320 540 680 556 T 1520 550 L 1520 620 Q 1120 636 760 624 T -80 630 Z" fill="#e4e6db" opacity="0.8"/>
                         <path d="M-80 720 Q 360 700 760 716 T 1520 710 L 1520 800 L -80 800 Z" fill="#dcdfd2" opacity="0.75"/>
                         <path d="M240 448 Q 520 432 820 444 T 1360 440 L 1360 462 Q 1040 474 720 466 T 240 470 Z" fill="#ffffff" opacity="0.5"/>
-                    </g>
-                    <g transform="translate(920,545) rotate(-7) scale(0.88)">
-                        <rect x="-218" y="-104" width="436" height="208" rx="3" fill="#9aa694" opacity="0.25" filter="url(#ha-blur)" transform="translate(-8,10)"/>
-                        <rect x="-218" y="-104" width="436" height="208" rx="2" fill="#dee7dc"/>
-                        <rect x="-218" y="-104" width="436" height="208" rx="2" fill="none" stroke="#ffffff" stroke-width="3"/>
-                        <line x1="-218" y1="-78" x2="218" y2="-78" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
-                        <line x1="-218" y1="78" x2="218" y2="78" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
-                        <line x1="-98" y1="-78" x2="-98" y2="78" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
-                        <line x1="98" y1="-78" x2="98" y2="78" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
-                        <line x1="-98" y1="0" x2="98" y2="0" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
-                        <line x1="0" y1="-108" x2="0" y2="108" stroke="#8fa08c" stroke-width="3" opacity="0.8"/>
-                        <g transform="translate(232,52)">
-                            <ellipse cx="-26" cy="14" rx="30" ry="5" fill="#3d4a3f" opacity="0.22" filter="url(#ha-blur-sm)"/>
-                            <circle cx="0" cy="-3" r="4.6" fill="#1a365d"/>
-                            <path d="M-1 1 L -3 12 M -1 1 L 5 10" stroke="#1a365d" stroke-width="3.4" stroke-linecap="round"/>
-                            <path d="M2 -4 Q 10 -8 14 -3" stroke="#1a365d" stroke-width="2.6" fill="none" stroke-linecap="round"/>
-                            <circle cx="16" cy="-2" r="3.4" fill="none" stroke="#1a365d" stroke-width="1.6"/>
-                        </g>
-                        <g transform="translate(-236,-44) scale(0.92)">
-                            <ellipse cx="-24" cy="13" rx="27" ry="4.5" fill="#3d4a3f" opacity="0.22" filter="url(#ha-blur-sm)"/>
-                            <circle cx="0" cy="-3" r="4.4" fill="#1a365d"/>
-                            <path d="M-1 1 L -4 11 M -1 1 L 4 11" stroke="#1a365d" stroke-width="3.2" stroke-linecap="round"/>
-                            <path d="M1 -4 Q -7 -9 -11 -4" stroke="#1a365d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-                            <circle cx="-13" cy="-3" r="3.2" fill="none" stroke="#1a365d" stroke-width="1.5"/>
-                        </g>
-                        <circle cx="34" cy="-10" r="2.6" fill="#cfc06a"/>
-                    </g>
-                    <g transform="translate(560,690)">
-                        <ellipse cx="-20" cy="12" rx="24" ry="4" fill="#6b7263" opacity="0.2" filter="url(#ha-blur-sm)"/>
-                        <circle cx="0" cy="-8" r="4" fill="#1a365d"/>
-                        <path d="M0 -4 L 0 6 M 0 6 L -4 16 M 0 6 L 4 16" stroke="#1a365d" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M480 470 Q 720 456 980 466 T 1330 462 L 1330 512 Q 1080 526 830 518 T 480 520 Z" fill="#dfe8dc" opacity="0.85"/>
+                        <path d="M700 636 Q 880 626 1080 634 T 1360 630 L 1360 664 Q 1160 674 960 668 T 700 670 Z" fill="#e9efe4" opacity="0.8"/>
+                        <path d="M-80 146 Q 300 126 640 144 T 1250 138" stroke="#ffffff" stroke-width="7" fill="none" opacity="0.8" stroke-linecap="round"/>
+                        <path d="M-80 336 Q 350 314 720 334 T 1520 328" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.55" stroke-linecap="round"/>
+                        <path d="M-80 556 Q 320 536 680 552 T 1520 546" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.5" stroke-linecap="round"/>
+                        <path d="M-80 716 Q 360 696 760 712 T 1520 706" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.5" stroke-linecap="round"/>
+                        <path d="M260 372 Q 560 360 880 368 T 1330 364" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.35" stroke-linecap="round"/>
+                        <path d="M200 756 Q 520 746 860 754 T 1330 750" stroke="#cfd2c2" stroke-width="3.5" fill="none" opacity="0.4" stroke-linecap="round"/>
                     </g>
                 </g>
 
-                <!-- Scene 3: esports arena -->
+                <!-- Scene 3: cool arena grey-blues -->
+
                 <g class="hero-scene hero-scene-esports">
                     <rect width="1440" height="800" fill="url(#ha-arena)"/>
                     <g filter="url(#ha-stroke-esports)">
@@ -380,38 +337,13 @@
                         <path d="M-80 580 Q 480 520 980 560 T 1520 545 L 1520 625 Q 1000 660 520 632 T -80 655 Z" fill="#d6e0eb" opacity="0.8"/>
                         <path d="M-80 740 Q 500 690 1020 725 T 1520 712 L 1520 800 L -80 800 Z" fill="#cbd8e6" opacity="0.75"/>
                         <path d="M180 300 Q 560 265 960 292 T 1420 282 L 1420 305 Q 1000 330 600 312 T 180 322 Z" fill="#ffffff" opacity="0.45"/>
-                    </g>
-                    <g opacity="0.4">
-                        <circle cx="1080" cy="205" r="3" fill="#1a365d"/>
-                        <circle cx="1125" cy="198" r="3" fill="#1a365d"/>
-                        <circle cx="1168" cy="208" r="3" fill="#1a365d"/>
-                        <circle cx="1230" cy="200" r="3" fill="#1a365d"/>
-                    </g>
-                    <g transform="translate(920,645)">
-                        <ellipse cx="6" cy="10" rx="150" ry="58" fill="url(#ha-glow)"/>
-                        <path d="M-16 22 L -215 58 L -185 66 L -6 30 Z" fill="#42506b" opacity="0.19" filter="url(#ha-blur)"/>
-                        <path d="M-26 6 Q -30 -6 -24 -16 L -20 -16 L -20 8 Z" fill="#16304f"/>
-                        <rect x="-27" y="18" width="16" height="3.4" rx="1.7" fill="#16304f"/>
-                        <circle cx="-10" cy="-16" r="5" fill="#1a365d"/>
-                        <path d="M-9 -11 Q -2 -8 1 -2 L 1 8 L -14 8 Q -17 -2 -9 -11 Z" fill="#1a365d"/>
-                        <path d="M-2 -2 Q 6 -1 11 1" stroke="#1a365d" stroke-width="3" fill="none" stroke-linecap="round"/>
-                        <path d="M-15 -18 Q -10 -24 -4 -18" stroke="#16304f" stroke-width="2.2" fill="none"/>
-                        <rect x="2" y="8" width="52" height="4" rx="2" fill="#233a57"/>
-                        <rect x="8" y="12" width="3.4" height="10" fill="#233a57"/>
-                        <rect x="44" y="12" width="3.4" height="10" fill="#233a57"/>
-                        <rect x="20" y="-16" width="4" height="24" fill="#233a57"/>
-                        <rect x="24" y="-18" width="26" height="19" rx="2" fill="#1c2f4a"/>
-                        <rect x="26.5" y="-15.5" width="21" height="14" rx="1" fill="#fff3da"/>
-                        <rect x="26.5" y="-15.5" width="21" height="14" rx="1" fill="#ffe9be" opacity="0.7" filter="url(#ha-blur-sm)"/>
-                    </g>
-                    <g transform="translate(420,706) scale(0.62)" opacity="0.55">
-                        <path d="M-12 20 L -150 46 L -128 52 L -4 26 Z" fill="#42506b" opacity="0.18" filter="url(#ha-blur)"/>
-                        <circle cx="-8" cy="-12" r="5" fill="#1a365d"/>
-                        <path d="M-7 -7 Q 0 -5 3 0 L 3 8 L -12 8 Q -14 -1 -7 -7 Z" fill="#1a365d"/>
-                        <rect x="4" y="8" width="44" height="4" rx="2" fill="#233a57"/>
-                        <rect x="18" y="-12" width="4" height="20" fill="#233a57"/>
-                        <rect x="22" y="-14" width="22" height="16" rx="2" fill="#1c2f4a"/>
-                        <rect x="24" y="-12" width="18" height="12" rx="1" fill="#eef2fb"/>
+                        <path d="M520 468 Q 800 440 1090 462 T 1430 452 L 1430 502 Q 1130 522 830 506 T 520 516 Z" fill="#f4e7d4" opacity="0.8"/>
+                        <path d="M-80 206 Q 400 146 860 186 T 1520 171" stroke="#ffffff" stroke-width="7" fill="none" opacity="0.8" stroke-linecap="round"/>
+                        <path d="M-80 386 Q 460 326 940 368 T 1520 351" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.55" stroke-linecap="round"/>
+                        <path d="M-80 576 Q 480 516 980 556 T 1520 541" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.5" stroke-linecap="round"/>
+                        <path d="M-80 736 Q 500 686 1020 721 T 1520 708" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.5" stroke-linecap="round"/>
+                        <path d="M240 420 Q 620 396 1000 414 T 1430 404" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.35" stroke-linecap="round"/>
+                        <path d="M180 764 Q 560 744 960 758 T 1430 748" stroke="#b9c8da" stroke-width="3.5" fill="none" opacity="0.4" stroke-linecap="round"/>
                     </g>
                 </g>
 

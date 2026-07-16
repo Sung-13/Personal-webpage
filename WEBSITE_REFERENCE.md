@@ -252,7 +252,7 @@ PhD funding can vary depending on your circumstances and eligibility. I am happy
 
 ## Hero Artwork
 
-The hero section has a painted backdrop of three scenes that slowly crossfade (about 10 seconds each): open-water swimmers, an aerial tennis court, and an esports player at a glowing desk. It is **original hand-coded SVG artwork inspired by the style of Werner Bronkhorst** (not copies of his paintings — his actual works are copyrighted). A credit line sits in the footer.
+The hero section has a painted backdrop of three abstract impasto colour-fields that slowly crossfade (about 10 seconds each): water blues, warm court neutrals with sage accents, and cool arena grey-blues with a warm accent stroke. Thick palette-knife-style bands with ragged edges, ridge highlights, and drag streaks evoke sculptural paint. It is **original hand-coded SVG artwork inspired by the impasto style of Werner Bronkhorst** (no figurative elements, and not copies of his paintings — his actual works are copyrighted). A credit line sits in the footer.
 
 - **Artwork markup**: in `index.html`, the `<div class="hero-art">` block inside the hero section
 - **Behaviour/styling**: in `assets/css/style.css`, the `.hero-art` / `.hero-scene` rules
