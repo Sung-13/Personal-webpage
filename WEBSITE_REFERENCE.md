@@ -356,6 +356,12 @@ A custom domain like `sungkyungkim.com` looks more professional and improves SEO
 4. Find-and-replace `https://sung-13.github.io/Personal-webpage/` with the new domain in `index.html`, `sitemap.xml`, and `robots.txt`
 5. Commit and push, then in GitHub: repo **Settings → Pages → Custom domain**, enter the domain, save, and tick "Enforce HTTPS"
 
+### Security Policy (CSP)
+
+The `<head>` of `index.html` carries a strict Content-Security-Policy meta tag (GitHub Pages cannot set real HTTP headers). It only allows resources from this site itself, images from `www.stir.ac.uk` (profile-photo fallback), and the OpenStreetMap iframe.
+
+**If you add anything loaded from another website** — an external image, video, embed, or script — you must also add its domain to the matching directive (`img-src`, `frame-src`, `script-src`) in that meta tag, or the browser will silently block it. Also avoid inline `style="..."` attributes and inline `onclick=`/`onerror=` handlers; put styles in `style.css` and behaviour in `main.js` instead (the CSP blocks inline ones).
+
 ### SEO Checklist (after significant updates)
 
 1. **Google Search Console** (https://search.google.com/search-console): add the site as a property, verify ownership, and submit `sitemap.xml`. Request re-indexing after big content changes.

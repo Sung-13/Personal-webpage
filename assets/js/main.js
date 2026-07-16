@@ -64,4 +64,15 @@ document.addEventListener('DOMContentLoaded', function () {
             link.setAttribute('target', '_blank');
         }
     });
+
+    // Profile photo fallback (CSP-safe replacement for the old inline onerror)
+    const profilePhoto = document.querySelector('.profile-photo');
+    if (profilePhoto) {
+        const fallbackSrc = 'https://www.stir.ac.uk/research/hub/image/1835665';
+        const useFallback = () => {
+            if (profilePhoto.src !== fallbackSrc) profilePhoto.src = fallbackSrc;
+        };
+        profilePhoto.addEventListener('error', useFallback);
+        if (profilePhoto.complete && profilePhoto.naturalWidth === 0) useFallback();
+    }
 });

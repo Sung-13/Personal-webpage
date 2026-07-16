@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security policies (GitHub Pages cannot set custom HTTP headers, so these are meta-based).
+         If you add an external image/embed/script, extend the matching CSP directive below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://www.stir.ac.uk; font-src 'self'; frame-src https://www.openstreetmap.org; base-uri 'none'; form-action 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
     <meta name="theme-color" content="#1a365d">
 
     <!-- Primary SEO Meta Tags -->
@@ -362,7 +368,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="assets/images/profile.jpg" alt="Dr Sungkyung Kim, Assistant Professor in Sport Management at the University of Stirling" class="profile-photo" fetchpriority="high" width="600" height="600" onerror="this.src='https://www.stir.ac.uk/research/hub/image/1835665'">
+                <img src="assets/images/profile.jpg" alt="Dr Sungkyung Kim, Assistant Professor in Sport Management at the University of Stirling" class="profile-photo" fetchpriority="high" width="600" height="600">
             </div>
         </div>
     </header>
@@ -832,7 +838,6 @@
                         src="https://www.openstreetmap.org/export/embed.html?bbox=-3.926%2C56.141%2C-3.910%2C56.150&layer=mapnik&marker=56.1456679%2C-3.9203661"
                         width="100%"
                         height="300"
-                        style="border:0;"
                         allowfullscreen=""
                         loading="lazy"
                         title="University of Stirling location">
@@ -853,6 +858,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=20260716"></script>
 </body>
 </html>
