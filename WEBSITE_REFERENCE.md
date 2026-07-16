@@ -250,6 +250,19 @@ PhD funding can vary depending on your circumstances and eligibility. I am happy
 
 ---
 
+## Hero Artwork
+
+The hero section has a painted backdrop of three scenes that slowly crossfade (about 10 seconds each): open-water swimmers, an aerial tennis court, and an esports player at a glowing desk. It is **original hand-coded SVG artwork inspired by the style of Werner Bronkhorst** (not copies of his paintings — his actual works are copyrighted). A credit line sits in the footer.
+
+- **Artwork markup**: in `index.html`, the `<div class="hero-art">` block inside the hero section
+- **Behaviour/styling**: in `assets/css/style.css`, the `.hero-art` / `.hero-scene` rules
+- **Change the pace**: edit the `30s` duration and the `10s`/`20s` animation delays in the CSS
+- **Show only one scene (no animation)**: in the CSS set `.hero-scene { animation: none; }` and add `opacity: 1` to the scene you want (e.g. `.hero-scene-swim`)
+- **Remove the artwork entirely**: delete the `hero-art` div from `index.html`, the hero-art CSS block, and the footer credit line
+- Visitors with "reduce motion" enabled automatically see only the static swimmers scene
+
+---
+
 ## How to Update Content
 
 ### Updating Your Introduction (About Section)
